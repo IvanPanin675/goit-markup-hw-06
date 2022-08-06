@@ -305,7 +305,7 @@ img {
 
 
 
-/*чем ми занимаемся*/
+/*============ чем ми занимаемся==============*/
 
 .item-what {
     position: relative;
@@ -331,7 +331,7 @@ img {
     color: var(--bg-color);
 }
 
-/*команда*/
+/*=======команда===============*/
 
 .item-team {
     background-color: var(--bg-color);
@@ -539,6 +539,68 @@ img {
     fill: #ffffff;
 }
 
+.footer-div-for-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-form {
+    display: flex;
+    
+}
+
+.footer-form-input {
+    
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    outline: none;
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    color: var(--bg-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: text;
+}
+
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.footer-span-send {
+    
+    margin-left: 10px;
+}
+
+.footer-form-send {
+    display: block;
+    fill: var(--bg-color);
+}
 
 /* ============backdrop============= */
 
@@ -573,8 +635,9 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
     
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
     
     background-color: #FFFFFF;
@@ -597,15 +660,170 @@ img {
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
 
-    
-    
+
 }
 
 .modal-btn-svg {
     display: block;
 }
+
+.modal-btn:hover .modal-btn-svg {
+    fill: var(--Logo-bt-link);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-text {
+    margin-bottom: 12px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--headers-text-color);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-field {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.modal-form-input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    width: 100%;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-input:focus-visible {
+    border-color: var(--Logo-bt-link);
+}
+
+.modal-form-message {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: none;
+    height: 120px;
+
+    resize: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-message:hover,
+.modal-form-message:focus,
+.modal-form-message:focus-visible {
+    border-color: var(--Logo-bt-link);
+}
+
+.modal-div-for-svg {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-svg {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translate(-50%, -50%);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:hover + .modal-svg,
+.modal-form-input:focus + .modal-svg,
+.modal-form-input:focus-visible + .modal-svg {
+    fill: var(--Logo-bt-link);
+}
+
+.modal-form-check-desk {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-span-galochka {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--headers-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-galochka {
+    display: block;
+    opacity: 0;
+    fill:var(--bg-color);
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-check:checked +.modal-form-check-desk .modal-span-galochka {
+    background-color: var(--Logo-bt-link);
+    border-color: var(--Logo-bt-link);
+    outline: none;
+}
+
+.modal-form-check:checked+.modal-form-check-desk .modal-galochka {
+    opacity: 1;
+
+}
+
+.modal-form-check:focus +.modal-form-check-desk .modal-span-galochka,
+.modal-form-check:hover+.modal-form-check-desk .modal-span-galochka {
+    border-color: var(--Logo-bt-link);
+}
+
+
+
+.bt-submit {
+    margin-top: 30px;
+}
+
 
 /*====================для портфолiо сторiнки=======================*/
 
