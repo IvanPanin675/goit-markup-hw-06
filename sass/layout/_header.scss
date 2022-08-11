@@ -1,0 +1,124 @@
+.header-line {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+
+    border-bottom: 1px solid #ECECEC;
+
+
+    background-color: var(--bg-color);
+}
+
+.link.current {
+    position: relative;
+    display: block;
+    color: var(--Logo-bt-link);
+}
+
+.link.current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -1px;
+    width: 100%;
+
+    background-color: var(--Logo-bt-link);
+}
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+
+
+    color: var(--Logo-bt-link);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+}
+
+.header-conteiner .logo {
+    margin-right: 93px;
+}
+
+.logo .black {
+    color: black;
+}
+
+.item-nav:not(:first-child) {
+    margin-left: 50px;
+}
+
+.navi {
+    color: var(--headers-text-color);
+    font-weight: 500;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navi:hover,
+.navi:focus,
+.kont:hover,
+.kont:focus {
+    color: var(--Logo-bt-link);
+    fill: var(--Logo-bt-link);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navi:active {
+    color: var(--Logo-bt-link);
+}
+
+.list.flex {
+    margin-left: auto;
+}
+
+.link.navi,
+.link.kont {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.item-kont:not(:last-child) {
+    margin-right: 50px;
+}
+
+.kont {
+    display: flex;
+    align-items: center;
+
+    color: var(--primary-text-color);
+    fill: var(--primary-text-color);
+    font-weight: 500;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kont>svg {
+    margin-right: 10px;
+}
+
+.podzagolovok {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--headers-text-color);
+}
